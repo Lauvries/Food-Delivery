@@ -11,7 +11,7 @@ Manager: john, pw: secret
 - Add order
 - List all undelivered orders
 
-Delivery guy: Paul, pw: secret
+Delivery guy: paul, pw: secret
 - List all my orders
 - Mark as delivered
 
