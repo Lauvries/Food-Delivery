@@ -34,8 +34,8 @@ class Router
     puts "--------------------"
     puts "------- MENU -------"
     puts "--------------------"
-    puts "1. Mark order as delivered"
-    puts "2. List all of my orders"
+    puts "1. List all of my orders"
+    puts "2. Mark order as delivered"
     puts "8. Exit"
     print "> "
   end
@@ -66,12 +66,12 @@ class Router
     else puts "Try again..."
     end
   end
-  def route_action_delivery_guy(choice)
 
+  def route_action_delivery_guy(choice)
     current_user = @current_user
     case choice
-    when 1 then @orders_controller.mark_as_delivered(current_user)
-    when 2 then @meals_controller.list
+    when 1 then @orders_controller.list_my_orders(current_user)
+    when 2 then @orders_controller.mark_as_delivered(current_user)
     when 8 then stop!
     else puts "Try again..."
     end

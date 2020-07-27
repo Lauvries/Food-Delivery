@@ -1,6 +1,6 @@
 class Order
   attr_reader :meal, :customer, :delivered
-  attr_accessor :id
+  attr_accessor :id, :employee
 
   def initialize(attributes = {})
     @meal = attributes[:meal]

@@ -24,6 +24,8 @@ class MealRepository
     @meals.find { |meal| meal.id == id }
   end
 
+  private
+
   def load_csv
     @next_id = 0
     csv_options = { headers: :first_row, header_converters: :symbol }

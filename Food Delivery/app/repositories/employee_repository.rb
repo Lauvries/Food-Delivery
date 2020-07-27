@@ -26,6 +26,8 @@ class EmployeeRepository
     @employees.select { |employee| employee.role == 'delivery_guy' }
   end
 
+  # private
+
   # load csv
   def load_csv
     csv_options = { headers: :first_row, header_converters: :symbol }

@@ -1,3 +1,5 @@
+require "csv"
+
 require_relative "../models/order"
 
 class OrderRepository
@@ -26,6 +28,8 @@ class OrderRepository
   def undelivered_orders
     @orders.reject { |order| order.delivered? }
   end
+
+
 
   def load_csv
     @next_id = 0
